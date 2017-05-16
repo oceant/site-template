@@ -1,0 +1,46 @@
+.button {
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    padding: 8px 5px;
+    text-decoration: none;
+    &__middle {
+        width: 250px;
+        @include fts(14);
+    }
+    &__fullwidth {
+        width: 100%;
+        @include fts(14);
+    }
+}
+
+.button--default {
+    background-color: $color-button-default;
+    color: $color-text-default;
+}
+.button--info {
+    background-color: $color-button-info;
+    color: $color-text-inverse;
+}
+.button--danger {
+    background-color: $color-button-danger;
+    color: $color-text-inverse;
+}
+
+.button__sp-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: $color-button-accent;
+    text-align: center;
+    padding: 5px 3px;
+    color: $color-text-inverse;
+    text-decoration: none;
+    cursor: pointer;
+    @include fts(8,8);
+    i {
+        @include fts(20,20);
+        display: block;
+        margin-bottom: 2px;
+    }
+}

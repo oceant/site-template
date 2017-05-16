@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+    <head>
+        <% include ../include/head.ejs %>
+    </head>
+    <body>
+
+        <% include ../include/header.ejs %>
+
+        <div class="contents main">
+            <%- include('../template/' + path) %>
+        </div>
+
+        <% include ../include/footer.ejs %>
+        <% include ../include/scripts.ejs %>
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+        <% include ../include/ga.ejs %>
+
+    </body>
+</html>

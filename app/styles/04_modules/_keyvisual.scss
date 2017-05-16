@@ -1,0 +1,18 @@
+.keyvisual__top {
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+    padding: 50px;
+    @media screen and (max-width: 767px) {
+        padding: 20px;
+    }
+
+    img {
+        width: 295px;
+        height: 250px;
+        @media screen and (max-width: 767px) {
+            width: 120px;
+            height: 102px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.table {
+    tr {
+        border-top: 1px solid $color-line-default;
+        &:last-child {
+            border-bottom: 1px solid $color-line-default;        
+        }
+        &:nth-child(even) {
+            background-color: $color-background-shadow;
+        }
+    }
+    th,td {
+        vertical-align: top;
+        text-align: left;
+        padding: map-get($padding, padding-y) map-get($padding, padding-x);
+        @include fts(14);
+    }
+}

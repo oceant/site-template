@@ -1,0 +1,48 @@
+@for $i from 1 through 12
+{
+    $width: (100% / (12/$i));
+    .col-lg-#{$i}
+    {
+        width: $width;
+    }
+}
+@media screen and (max-width: 1023px) {
+    @for $i from 1 through 12
+    {
+        $width: (100% / (12/$i));
+        .col-md-#{$i}
+        {
+            width: $width;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    @for $i from 1 through 12
+    {
+        $width: (100% / (12/$i));
+        .col-sm-#{$i}
+        {
+            width: $width;
+        }
+    }
+}
+
+.flex__container {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.flex__justify--between {
+    justify-content: space-between;
+}
+.flex__justify--around {
+    justify-content: space-around;
+}
+.flex__align--end {
+    align-items: flex-end;
+}
+.flex__item {
+
+}

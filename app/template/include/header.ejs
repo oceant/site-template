@@ -1,0 +1,16 @@
+<header>
+    <div class="header__inner">
+        <nav class="header__gnavi">
+            <ul class="gnavi__container">
+                <% var isItemActive = (gnavi == 'home')? 'gnavi__item--active' : ''  %>
+                <li class="gnavi__item <%= isItemActive %>" >
+                    <a href="index.html">ホーム</a>
+                </li>
+                <% var isItemActive = (gnavi == 'sample')? 'gnavi__item--active' : ''  %>
+                <li class="gnavi__item <%= isItemActive %>" >
+                    <a href="sample.html">サンプル</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

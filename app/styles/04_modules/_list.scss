@@ -1,0 +1,18 @@
+.list__text--number {
+    margin: 0;
+    padding: 0 0 0 16px;
+}
+
+.list__text--square {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        @include fts(14);
+        background: transparent url('../images/common/list-square.png') no-repeat;
+        background-position: 0 4px;
+        background-size: 16px;
+        margin: 10px 0;
+        padding-left: 24px;
+    }
+}

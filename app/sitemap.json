@@ -1,0 +1,20 @@
+{
+    "pages": {
+        "index": {
+            "layout": "default",
+            "gnavi": "home",
+            "title": "サイトタイトル",
+            "keywords": "サイトキーワード",
+            "description": "サイトディスクリプション",
+            "image": "http://example.com/ogp.png"
+        },
+        "sample": {
+            "layout": "default",
+            "gnavi": "sample",
+            "title": "サンプル｜サイトタイトル",
+            "keywords": "サンプルキーワード",
+            "description": "サンプルディスクリプション",
+            "image": "http://example.com/ogp.png"
+        }
+    }
+}

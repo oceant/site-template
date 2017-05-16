@@ -1,0 +1,10 @@
+header {
+    z-index: index($z, headerArea);
+    width: 100%;
+}
+
+.header__gnavi {
+    background-color: $color-background-default;
+    max-width: $contents-width;
+    margin: 0 auto;
+}

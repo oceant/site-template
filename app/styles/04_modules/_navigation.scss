@@ -1,0 +1,57 @@
+.gnavi {
+    &__container {
+        display: flex;
+        align-items: flex-end;
+        padding: 5px 0;
+    }
+    &__item {
+        width: 20%;
+        padding: 0 5px;
+        border-right: 1px solid $color-text-default;
+        &:first-child {
+            border-left: 1px solid $color-text-default;
+        }
+        @media screen and (max-width: 767px) {
+            width: 25%;
+            margin: 40px 0 0;
+            &:first-child {
+                border-left: 0px;
+            }
+            &:last-child {
+                border-right: 0px;
+            }
+        }
+        a {
+            text-align: center;
+            display: block;
+            width: 100%;
+            padding: 12px 5px;
+            text-decoration: none;
+            color: $color-text-default;
+            font-weight: bold;
+            @include fts(14,14);
+            @media screen and (max-width: 767px) {
+                padding: 5px 5px;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        &--active {
+            a {
+                background-color: $color-background-default;
+                color: $color-text-default;
+                pointer-events: none;
+                border-bottom: 2px solid $color-text-default;
+            }
+        }
+        &--disabled {
+            a {
+                cursor: no-drop;
+                background-color: #e0e0e0;
+                color: $color-text-sub;
+                pointer-events: none;
+            }
+        }
+    }
+}

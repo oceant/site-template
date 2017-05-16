@@ -1,0 +1,8 @@
+a {
+    color: $color-link-default;
+    text-decoration: underline;
+}
+
+a[href="#"] {
+    pointer-events: none;
+}

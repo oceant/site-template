@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+sub,sup {
+    @include fts(10,10);
+    @media screen and (max-width: 767px) {
+        @include fts(9);
+    }
+}
+sub {
+    bottom: -0.2px;
+}
+
+h1 {
+    @include fts(28);
+    text-align: center;
+}
+
+h3 {
+    @include fts(16);
+}
+
+p {
+    @include fts(14,20);
+}
+
+.text--large {
+    @include fts(22,32);
+    letter-spacing: -1px;
+    @media screen and (max-width: 767px) {
+        @include fts(18,24);
+    }
+}
+.text--middle {
+    @include fts(20,24);
+    @media screen and (max-width: 767px) {
+        @include fts(16,10);
+    }
+}

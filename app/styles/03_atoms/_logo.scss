@@ -1,0 +1,6 @@
+.logo__header {
+    width: 174px + map-get($spacing, padding-x);
+    @media screen and (max-width: 767px) {
+        width: 66px + map-get($spacing-smartphone, padding-x);
+    }
+}

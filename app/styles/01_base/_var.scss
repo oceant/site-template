@@ -1,0 +1,73 @@
+/* --------------------------
+color
+-------------------------- */
+$color-text-default: #000000;
+$color-text-inverse: #FFFFFF;
+$color-text-sub: #999999;
+
+$color-link-default: #208DC3;
+$color-link-hover: #208DC3;
+$color-link-active: #208DC3;
+$color-link-visited: #208DC3;
+
+$color-background-default: #FFFFFF;
+$color-background-inverce: #000000;
+$color-background-accent: #C7E5EF;
+$color-background-shadow: #f0f0f0;
+$color-background-info: #C7E5EF;
+$color-background-warning: #ffff99;
+$color-background-danger: #ff9999;
+$color-background-success: #99ff99;
+
+$color-border-default: #666666;
+
+$color-line-default: #cccccc;
+
+$color-button-default:  #C7E5EF;
+$color-button-accent: #003461;
+$color-button-info: rgb(0,48,126);
+$color-button-danger: rgb(105,0,16);
+
+
+/* --------------------------
+padding
+-------------------------- */
+$spacing: (
+  padding-x: 40px,
+  padding-y: 40px,
+  padding-outer-x: 40px,
+  padding-outer-y: 80px
+);
+$spacing-tablet: (
+  padding-x: 15px,
+  padding-y: 15px,
+  padding-outer-x: 15px,
+  padding-outer-y: 45px
+);
+$spacing-smartphone: (
+  padding-x: 40px,
+  padding-y: 40px,
+  padding-outer-x: 40px,
+  padding-outer-y: 40px
+);
+
+$padding: (
+    padding-x: 10px,
+    padding-y: 10px
+);
+$padding-smartphone: (
+    padding-x: 8px,
+    padding-y: 8px
+);
+
+
+/* --------------------------
+contents width
+-------------------------- */
+$contents-width: 1280px;
+
+
+/* --------------------------
+z-index order
+-------------------------- */
+$z: headerArea, spNavi;

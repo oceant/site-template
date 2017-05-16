@@ -1,0 +1,22 @@
+// Generate default CSS rules
+@include layout($spacing);
+
+// Generate CSS rules for tablet view
+@media screen and (max-width: 1023px) {
+  @include layout($spacing-tablet);
+}
+// Generate CSS rules for smartphone view
+@media screen and (max-width: 767px) {
+  @include layout($spacing-smartphone);
+}
+
+.main {
+}
+
+.contents {
+    margin:0 auto;
+    max-width: $contents-width;
+    @media screen and (max-width: 767px) {
+        padding: 0 20px;
+    }
+}

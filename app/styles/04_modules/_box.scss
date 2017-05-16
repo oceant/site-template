@@ -1,0 +1,5 @@
+.box__info {
+    background-color: $color-background-info;
+    padding: map-get($padding, padding-y) map-get($padding, padding-x);
+    color: $color-text-default;
+}
