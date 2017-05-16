@@ -19,7 +19,7 @@ gulp.task("ejs", function() {
         var data = json.pages[key];
         data.path = key;
         var layout = data.layout;
-        gulp.src("app/template/layout/" + layout + ".ejs") //指定されたlayoutファイルを読み込む
+        gulp.src("app/_template/layout/" + layout + ".ejs") //指定されたlayoutファイルを読み込む
             .pipe($.ejs(data))
             .pipe($.rename(key + '.html')) //作成されたHTMLファイルをリネーム
             .pipe(gulp.dest('app')); //appディレクトリ内に書き出すことでbrowserSyncによるライブプレビューに反映
@@ -177,11 +177,11 @@ gulp.task('wiredep', () => {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/template/include/scripts.ejs')
+  gulp.src('app/_template/include/scripts.ejs')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)*\.\./
     }))
-    .pipe(gulp.dest('app/template/include'));
+    .pipe(gulp.dest('app/_template/include'));
 });
 
 gulp.task('build', ['ejs', 'lint', 'html', 'images', 'extras'], () => {
