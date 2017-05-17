@@ -21,6 +21,15 @@ atomsやmodules等はほぼ空の状態です。サイト毎に結局指定し�
 
 Bootstrap等は含めていないので、必要に応じてbower等でインストールしてください。
 
+始め方
+--
+リポジトリをcloneした後に、Nodeモジュールとbower管理のライブラリをインストールする必要があります。
+
+    $ git clone git@github.com:oceant/site-template.git
+    $ npm install
+    $ bower install
+
+
 基本的な開発方法
 --
 
